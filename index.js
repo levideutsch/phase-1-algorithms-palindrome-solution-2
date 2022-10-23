@@ -1,5 +1,28 @@
+// function meetAtMiddle(word) {
+//   for(let i = 0; i < word.length / 2; i++) {
+//     const j = word.length -1 - i
+    
+//     const starChar = word[i]
+//     const endChar = word[j]
+
+//     if(starChar !== endChar) return false
+//   }
+//   return true
+// }
+
+
+
+
 function isPalindrome(word) {
-  // Write your algorithm here
+  for(let i = 0; i < word.length / 2; i++) {
+    const j = word.length -1 - i
+    
+    const starChar = word[i]
+    const endChar = word[j]
+
+    if(starChar !== endChar) return false
+  }
+  return true
 }
 
 /* 
